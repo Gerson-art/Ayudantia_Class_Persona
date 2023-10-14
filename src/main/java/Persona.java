@@ -1,32 +1,22 @@
 public class Persona {
 
-	private String Nombre;
-
-	/**  
-	 * 
-	 * @param moto
-	 */
+	private String Name;
+	public Persona(){
+		this.Name="federico, el rico";
+	}
 	public void viajarEnMoto(motocicleta moto) {
-		// TODO - implement Persona.viajarEnMoto
-		throw new UnsupportedOperationException();
+		System.out.println("Hola"+this.Name+"! el tiempo de viaje aproxiamado para llegar al Mall portal Temuco es de: "+moto.getDuracionviaje());
 	}
 
-	/**
-	 * 
-	 * @param auto
-	 */
+
+
 	public void viajarEnAuto(automovil auto) {
-		// TODO - implement Persona.viajarEnAuto
-		throw new UnsupportedOperationException();
+		System.out.println("Hola"+this.Name+"! el tiempo de viaje aproxiamado para llegar al Mall portal Temuco es de: "+auto.getDuracionviaje());
 	}
 
-	/**
-	 * 
-	 * @param bici
-	 */
+
 	public void viajarEnBicicleta(bicicleta bici) {
-		// TODO - implement Persona.viajarEnBicicleta
-		throw new UnsupportedOperationException();
+		System.out.println("Hola"+this.Name+"! el tiempo de viaje aproxiamado para llegar al Mall portal Temuco es de: "+bici.getDuracionviaje());
 	}
 
 }
