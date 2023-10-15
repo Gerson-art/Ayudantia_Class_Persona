@@ -1,32 +1,23 @@
 public class Persona {
 
-	private String Nombre;
-
-	/**  
-	 * 
-	 * @param moto
-	 */
-	public void viajarEnMoto(motocicleta moto) {
-		// TODO - implement Persona.viajarEnMoto
-		throw new UnsupportedOperationException();
+	private String Name;
+	public Persona(String name ){
+		this.Name=name;
+	}
+	public void viajarEnMoto(motocicleta moto, String destino) {
+		System.out.println("Hola "+ this.Name+"! el tiempo de viaje aproximado para llegar a "+destino+" en motocicleta es de: "+moto.getDuracionviaje()+" minutos");
 	}
 
-	/**
-	 * 
-	 * @param auto
-	 */
-	public void viajarEnAuto(automovil auto) {
-		// TODO - implement Persona.viajarEnAuto
-		throw new UnsupportedOperationException();
+
+
+	public void viajarEnAuto(automovil auto,String destino) {
+		System.out.println("Hola "+ this.Name+"! el tiempo de viaje aproximado para llegar a "+destino+" en motocicleta es de: "+auto.getDuracionviaje()+" minutos");
 	}
 
-	/**
-	 * 
-	 * @param bici
-	 */
-	public void viajarEnBicicleta(bicicleta bici) {
-		// TODO - implement Persona.viajarEnBicicleta
-		throw new UnsupportedOperationException();
+
+	public void viajarEnBicicleta(bicicleta bici,String destino) {
+		System.out.println("Hola "+ this.Name+"! el tiempo de viaje aproximado para llegar a "+destino+" en motocicleta es de: "+bici.getDuracionviaje()+" minutos");
+
 	}
 
 }
