@@ -1,5 +1,7 @@
 Nombre alumno: Gerson Urrea.
 
+
+
 Razones de implementacion de la clases
 
 La clase persona fue implementada debido a la necesidad de que exista una clase que "pueda emplear" distintos tipos de medios de transporte, por consiguiente que posea métodos que hagan uso de objetos de cada una de las clases asociadas a estos medios.
@@ -7,5 +9,10 @@ Las clases automovil, bicicleta y motocicleta fueron creadas debido a que se req
 
 Relaciones existentes en el diagrama
 
-La relación que existe en el diagrama creado dependencia, una relación de dependencia entre la clase persona y el resto de las clases, esto se debe a que los métodos de la clase persona tienen como parametro objetos de las clases relacionadas a los vehículos.
+La relación que existe en el diagrama creado dependencia, una relación de dependencia entre la clase persona y el resto de las clases, esto se debe a que los métodos de la clase persona tienen como parametro objetos de las clases relacionadas a los vehículos. 
+Por otro lado tambien existe una relacion de dependencia entre la clase Main y la clase Menu, debido que dentro de un método de la clase Main se instancia un objeto de la clase Menu, y a su vez Menu tiene una relación de dependencia con las clases: Persona,Automovil,Bicicleta,Motocicleta, StringValidator, entre otros; esto se debe que dentro del método "menu" se instancian objetos de las clases anteriores.
+
+
+
+
 
